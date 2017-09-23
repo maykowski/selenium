@@ -15,8 +15,7 @@ public class MyFirstTest3 {
         WebDriver driver = new FirefoxDriver();
         //Path sampleFile = Paths.get("C:\\Users\\User\\Desktop\\HTML\\body.samolot.html");
         driver.get("http://localhost:8080/body.samolot.html");
-        //driver.get("file:///C:/Users/User/Desktop/HTML/body.samolot.html");
-        Assert.assertEquals("samolot",driver.findElement(By.cssSelector(".samolot")).getText());
+        Assert.assertEquals("samolot2",driver.findElement(By.cssSelector(".samolot")).getText());
         //driver.findElement(By.cssSelector(".samolot")).getText();
         driver.close();
     }
